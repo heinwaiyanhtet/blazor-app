@@ -31,6 +31,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/hein/Desktop/blazorapp/routing/Pages/NavHandler.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTmF2SGFuZGxlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/hein/Desktop/blazorapp/routing/Pages/Navigate.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTmF2aWdhdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
