@@ -14,7 +14,15 @@
     {
         <li>
             <input type="checkbox" @bind="todo.IsDone" />
-                @todo.Title 
+                @if(todo.IsEditing)
+                {
+                    <input @bind="todo.Title"/>
+                    <buttton @onclick="(() => Edited(todo))">Save</buttton>
+                }
+                else{
+                    @todo.Title 
+                    <button @onclick="(() => toEdit(todo))">Edit</button>
+                }
             <button @onclick="(() => deleteToDo(todo))">Delete</button>
         </li>
     }
@@ -39,6 +47,15 @@
         todos.Remove(todo);   
     }
 
-    
+    private void toEdit(ToDoItem todo)
+    {
+        todo.IsEditing = true;
+    }
+
+    private void Edited(ToDoItem todo)
+    {
+        todo.IsEditing = false;
+    }
+
 
 }
