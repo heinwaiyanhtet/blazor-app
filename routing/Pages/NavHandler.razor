@@ -1,3 +1,21 @@
-@* @page "/nav-handler";
+@page "/nav-handler";
 @implements IDisposable
-@inject NavigationManager Navigation *@
+@inject NavigationManager Navigation
+
+
+<p>
+
+    <button @onclick="@(() => Navigation.NavigateTo("/"))">
+            Home (Allowed)
+    </button>
+
+    <button @onclick="@(() => Navigation.NavigateTo("/counter"))">
+            Counter (Prevented)
+    </button>
+
+</p>
+
+@code{
+
+
+}

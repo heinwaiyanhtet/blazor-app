@@ -46,6 +46,7 @@ main[b-6aghu7tzuu] {
 }
 
 @media (min-width: 641px) {
+
     .page[b-6aghu7tzuu] {
         flex-direction: row;
     }
@@ -67,4 +68,5 @@ main[b-6aghu7tzuu] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
+    
 }
